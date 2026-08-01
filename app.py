@@ -12,6 +12,11 @@ with open("promotion_scaler.pkl", "rb") as f:
 st.set_page_config(page_title="Employee Promotion Prediction")
 
 st.title("👨‍💼 Employee Promotion Prediction")
+employee_id = st.number_input(
+    "Employee ID",
+    min_value=1,
+    value=1001
+)
 
 # Inputs
 age = st.number_input("Age", min_value=18, max_value=65, value=25)
@@ -83,17 +88,18 @@ if st.button("Predict"):
 
     # Create input dataframe
     data = pd.DataFrame([{
-        "Age": age,
-        "Gender": gender,
-        "Experience": experience,
-        "Salary": salary,
-        "Department": department,
-        "PerformanceScore": performance,
-        "TrainingHours": training,
-        "Salary_Per_Experience": salary_per_experience,
-        "High_Performer": high_performer,
-        "Experience_Level_Encoded": exp_level
-    }])
+    "EmployeeID": employee_id,
+    "Age": age,
+    "Gender": gender,
+    "Experience": experience,
+    "Salary": salary,
+    "Department": department,
+    "PerformanceScore": performance,
+    "TrainingHours": training,
+    "Salary_Per_Experience": salary_per_experience,
+    "High_Performer": high_performer,
+    "Experience_Level_Encoded": exp_level
+}])
 
     # Scale
     data = scaler.transform(data)
