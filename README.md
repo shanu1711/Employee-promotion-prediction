@@ -2,9 +2,9 @@
 
 A Machine Learning web application that predicts whether an employee is likely to be promoted.
 
-## 🚀 Live Demo
-https://employee-promotion-prediction-wsmw5eeabsr64jx2b5apam.streamlit.app/
+## Live Demo
 
+[🚀 Try the App](https://your-app-name.streamlit.app)
 ## 🛠️ Technologies Used
 - Python
 - Streamlit
