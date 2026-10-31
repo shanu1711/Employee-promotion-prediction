@@ -132,8 +132,4 @@ if st.button("🚀 Predict Promotion"):
     )
 
 # ---------------- FOOTER ----------------
-st.markdown("---")
-st.markdown(
 
-    unsafe_allow_html=True
-)
