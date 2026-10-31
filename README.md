@@ -12,5 +12,3 @@ A Machine Learning web application that predicts whether an employee is likely t
 - Pandas
 - GitHub
 
-## 👨‍💻 Developed By
-Shanu Kumar
