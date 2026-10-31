@@ -134,6 +134,6 @@ if st.button("🚀 Predict Promotion"):
 # ---------------- FOOTER ----------------
 st.markdown("---")
 st.markdown(
-    "<center>Developed with ❤️ by <b>Shanu Kumar</b></center>",
+
     unsafe_allow_html=True
 )
